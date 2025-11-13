@@ -12,9 +12,9 @@ from PIL import Image, ImageDraw, ImageFont
 app = Flask(__name__)
 
 # ---------- CONFIG FROM ENV ----------
-WP_BASE_URL = os.environ.get("WP_BASE_URL", "").rstrip("/")
-WP_USER = os.environ.get("WP_USER", "")
-WP_APP_PASSWORD = os.environ.get("WP_APP_PASSWORD", "")
+WP_BASE_URL = os.environ.get("https://www.hindicover.com", "").rstrip("/")
+WP_USER = os.environ.get("newsstate6294@gmail.com", "")
+WP_APP_PASSWORD = os.environ.get("Hindicover@6294", "")
 
 LANG = os.environ.get("TTS_LANG", "hi")      # hi = Hindi, en = English
 MAX_IMAGES = int(os.environ.get("MAX_IMAGES", "5"))
@@ -159,3 +159,4 @@ def create_title_image(title: str, post_id: str, tmp_dir: str) -> str:
     Create a simple image with the blog title if no images are available.
     """
     width, height = 1080, 72
+

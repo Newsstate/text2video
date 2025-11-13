@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/make-video.py": {
+      "maxDuration": 60
+    }
+  }
+}
